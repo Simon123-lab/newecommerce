@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var sum=0;
+        var pr=0;
+        var marks=new Array(5);
+        for(var i=0;i<marks.length;i++)
+        {
+            marks [i]=parseInt(prompt("enter marks"));
+            sum+=marks[i];
+            per=(sum/500)*100;
+             if(per>70){
+                document.write("grade is A <br>")
+            }
+            else if(per>=60){
+                document.write("grade is B <br>")
+            }
+            else{
+                document.write("grade is C <br>")
+            } 
+        }alert("Total marks"+sum+" percantage"+per+"Grade is ");
+            
+        
+            
+    
+    </script>
+    
+</body>
+</html>
